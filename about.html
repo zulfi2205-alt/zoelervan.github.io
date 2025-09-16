@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tentang Kami — Ervan Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased bg-yellow-200 text-blue-1000">
+
+  <i class="text-sm font-medium uppercase text-center">
+  <div class="overflow-hidden bg-indigo-800 text-white py-3">
+    <div class="animate-marquee whitespace-nowrap">
+       “Gagal sekali, coba lagi. Gagal seribu kali, tetap bangkit lagi.”
+    </i>
+    
+      </div>
+  </div>
+  <style>
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-marquee {
+    display: inline-block;
+    padding-left: 0%;
+    animation: marquee 50s linear infinite;
+  }
+  </style>
+  
+<body class="antialiased bg-blue-200 text-blue-1000">
+<header class="bg-blue shadow">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="Logo" class="w-10 h-10 object-contain" />
+        <rect width="100%" height="100%" rx="6" fill="currentColor" />
+      </svg>
+      <div>
+        <div class="font-bold text-lg">Ervan Shop</div>
+        <div class="text-xs text-gray-500">Selalu mangutamakan Qualitas</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="index.html" class="hover:text-indigo-600">Home</a>
+      <a href="about.html" class="hover:text-indigo-600">Tentang</a>
+      <a href="services.html" class="hover:text-indigo-600">Layanan</a>
+      <a href="testimonials.html" class="hover:text-indigo-600">Testimoni</a>
+      <a href="contact.html" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Kontak</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" aria-label="menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto px-4 py-10">
+
+<section>
+  <h1 class="text-3xl font-bold mb-4">Tentang Kami</h1>
+  <p class="text-gray-600 mb-6">Kami adalah bisnis kecil yang berdedikasi untuk memberikan solusi berkualitas. Berpengalaman, responsif, dan peduli pada pelanggan.</p>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="font-bold mb-2">Visi</h3>
+      <p class="text-sm text-gray-500">Menjadi pilihan utama pelanggan di bidang kami.</p>
+    </div>
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="font-bold mb-2">Misi</h3>
+      <p class="text-sm text-gray-500">Memberi layanan cepat, berkualitas, dan terjangkau.</p>
+    </div>
+    <div class="bg-white p-6 rounded shadow">
+      <h3 class="font-bold mb-2">Nilai</h3>
+      <p class="text-sm text-gray-500">Integritas, inovasi, kepuasan pelanggan.</p>
+    </div>
+  </div>
+  <div class="mt-8">
+    <h2 class="text-2xl font-bold mb-4">Tim Kami</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      
+      <div class="text-center bg-white p-6 rounded shadow">
+        <img src="images/Ucup.jpg" alt="nama2" class="w-25 h-26 rounded-full bg-gray-100 mx-auto mb-3 flex items-center justify-center"Foto/>
+        
+        
+        <div class="font-bold">ucup</div>
+        <div class="text-sm text-gray-500">founder</div>
+      </div>
+      <div class="text-center bg-white p-6 rounded shadow">
+        <img src="images/isman.jpg" alt="nama1" class="w-25 h-26 rounded-full bg-gray-100 mx-auto mb-3 flex items-center justify-center"Foto/>
+        
+        
+        <div class="font-bold">Isman</div>
+        <div class="text-sm text-gray-500">Operasional</div>
+      </div>
+      <div class="text-center bg-white p-6 rounded shadow">
+        <img src="images/cewe_alay.jpg" alt="nama3" class="w-25 h-26 rounded-full bg-gray-100 mx-auto mb-3 flex items-center justify-center"Foto/>
+        
+        
+        <div class="font-bold">Cewe Alay</div>
+        <div class="text-sm text-gray-500">Customer Service</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="bg-white border-t mt-12">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+    <div>
+      <div class="font-bold">Ervan Shop</div>
+      <div class="text-sm text-gray-500">Depok II Timur —  DEPOK , Jawa Barat</div>
+    </div>
+    <div class="text-sm text-gray-600">
+      <div>Tel: <a href="tel:+628000000000" class="text-indigo-600">+62 800-0000-000</a></div>
+      <div>Email: <a href="mailto:info@example.com" class="text-indigo-600">info@example.com</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+const btn = document.getElementById('menuBtn');
+btn && btn.addEventListener('click', ()=> {
+  const nav = document.querySelector('nav');
+  if (nav) nav.classList.toggle('hidden');
+});
+</script>
+</body>
+</html>

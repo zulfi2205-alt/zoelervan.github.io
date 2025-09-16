@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head >
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <class="bg-white border-t mt-12">
+  <title>Home — Ervan Shop</title>
+  
+</head>
+<body class="antialiased bg-red-200 text-blue-1000">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @layer utilities {
+      @keyframes marquee {
+        0% { transform: translateX(00%); }
+        100% { transform: translateX(-100%); }
+      }
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+      /* Pause on hover */
+      .pause:hover .animate-marquee {
+        animation-play-state: paused;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="pause overflow-hidden w-full max-w-30xl border-4 border-gray-300 rounded-xl bg-white shadow-lg">
+    <div class="flex animate-marquee whitespace-nowrap">
+      
+      <!-- Blok gambar 1 -->
+      <div class="flex items-center space-x-10 px-5">
+        <img src="images/resistor.jpg" alt="Gambar A" class="rounded-xl shadow-md">
+        <img src="images/transistor.jpg" alt="Gambar B" class="rounded-xl shadow-md">
+        <img src="images/komponent.jpg" alt="Gambar C" class="rounded-xl shadow-md">
+        <img src="images/PCB.jpg" alt="Gambar D" class="rounded-xl shadow-md">
+      </div>
+
+      <!-- Duplikat isi (supaya loop mulus) -->
+      <div class="flex items-center space-x-10 px-5" >
+        <img src="images/PCB.jpg" alt="Gambar A" class="rounded-xl shadow-md">
+        <img src="images/transistor.jpg" alt="Gambar B" class="rounded-xl shadow-md">
+        <img src="images/komponent.jpg" alt="Gambar C" class="rounded-xl shadow-md">
+        <img src="images/PCB.jpg" alt="Gambar D" class="rounded-xl shadow-md">
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<header class="bg-green shadow">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="Logo" class="w-10 h-10 object-contain" />
+      
+        <rect width="100%" height="100%" rx="6" fill="currentColor" />
+      </svg>
+      <div>
+        <div class="font-bold text-lg">Ervan Shop</div>
+        <div class="text-xs text-gray-500">Selalu mangutamakan Qualitas</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex gap-6 items-center">
+      <a href="index.html" class="hover:text-indigo-600">Home</a>
+      <a href="about.html" class="hover:text-indigo-600">Tentang</a>
+      <a href="services.html" class="hover:text-indigo-600">Layanan</a>
+      <a href="testimonials.html" class="hover:text-indigo-600">Testimoni</a>
+      <a href="contact.html" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700">Kontak</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menuBtn" aria-label="menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="max-w-6xl mx-auto px-4 py-10">
+
+<section class="grid md:grid-cols-2 gap-8 items-center">
+  <div>
+    <h1 class="text-4xl font-extrabold mb-4">Selamat datang di <span class="text-indigo-600">Ervan Shop</span></h1>
+    <p class="text-gray-600 mb-6">Kami menyediakan produk dan layanan berkualitas untuk membantu kebutuhan Anda. Kreatif — Cepat — Terpercaya.</p>
+    <div class="flex gap-4">
+      <a href="services.html" class="px-5 py-3 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700">Lihat Layanan</a>
+      <a href="contact.html" class="px-5 py-3 border rounded hover:bg-gray-100">Hubungi Kami</a>
+    </div>
+    <div class="mt-8 grid sm:grid-cols-3 gap-4">
+      <div class="p-4 bg-white rounded shadow">
+        <div class="font-bold">Quality</div>
+        <div class="text-sm text-gray-500">Produk terbaik</div>
+      </div>
+      <div class="p-4 bg-white rounded shadow">
+        <div class="font-bold">Support</div>
+        <div class="text-sm text-gray-500">Layanan ramah</div>
+      </div>
+      <div class="p-4 bg-white rounded shadow">
+        <div class="font-bold">Delivery</div>
+        <div class="text-sm text-gray-500">Cepat & aman</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-indigo-50 to-white p-8">
+      <img src="images/transistor.jpg" alt="produk1" class="h-100 bg-gray-100 rounded mb-3 flex items-center justify-center"/>
+      <!-- Simple SVG illustration as placeholder -->
+      
+        <rect width="600" height="320" rx="12" fill="#eef2ff"/>
+        <g transform="translate(40,40)" fill="#6366f1">
+          <rect x="0" y="0" width="200" height="120" rx="8" fill="#6366f1" opacity="0.15"/>
+          <rect x="220" y="0" width="320" height="60" rx="8" fill="#6366f1" opacity="0.08"/>
+          <rect x="220" y="80" width="320" height="120" rx="8" fill="#6366f1" opacity="0.06"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="mt-12">
+  <h2 class="text-2xl font-bold mb-4">Produk Unggulan</h2>
+  <div class="grid sm:grid-cols-3 gap-6">
+    
+    <div class="bg-white rounded shadow p-4">
+      <img src="images/transistor.jpg" alt="produk1" class="h-50 bg-gray-100 rounded mb-3 flex items-center justify-center"/>
+      
+      
+      <div class="font-bold">Transistor</div>
+      <div class="text-sm text-gray-500">Deskripsi singkat produk A.</div>
+    </div>
+    <div class="bg-white rounded shadow p-4">
+      <img src="images/resistor.jpg" alt="produk2" class="h-30 bg-gray-100 rounded mb-3 flex items-center justify-center"/>
+      <div class="font-bold">Resistor</div>
+      <div class="text-sm text-gray-500">Deskripsi singkat produk B.</div>
+    </div>
+    <div class="bg-white rounded shadow p-4">
+      <img src="images/motor_kipas_angin.jpg" alt="produk3" class="h-50 bg-gray-100 rounded mb-3 flex items-center justify-center"/>
+      <div class="font-bold">Motor kipas angin</div>
+      <div class="text-sm text-gray-500">Deskripsi singkat produk C.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="bg-white border-t mt-12">
+  <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+    <div>
+      <div class="font-bold">Ervan Shop</div>
+      <div class="text-sm text-gray-500">Depok II Timur —  DEPOK , Jawa Barat</div>
+    </div>
+    <div class="text-sm text-gray-600">
+      <div>Tel: <a href="tel:+628000000000" class="text-indigo-600">+62 800-0000-000</a></div>
+      <div>Email: <a href="mailto:info@example.com" class="text-indigo-600">info@example.com</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+const btn = document.getElementById('menuBtn');
+btn && btn.addEventListener('click', ()=> {
+  const nav = document.querySelector('nav');
+  if (nav) nav.classList.toggle('hidden');
+});
+</script>
+</body>
+</html>
